@@ -5,13 +5,18 @@ body {
     
 }
 
+/* Add this CSS code for mobile navigation */
+
 
 
 header {
     background-color: #483d8b;
     color: #fff;
     padding: 10px 0;
-    
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding-top: 15px;
 }
 
 nav ul {
@@ -48,16 +53,14 @@ nav a:hover {
     .menu-toggle {
         display: block;
         justify-content: space-between;
-        margin-left: 15px;
-        position: fixed;
-        width: 100%;
-        z-index: 1000;
+        margin-left: 10px;
+        
     }
     .nav-list {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px;
+        top: 50px;
         left: 0;
         width: 100%;
         background-color: #483d8b;
@@ -74,10 +77,14 @@ nav a:hover {
         text-align: center;
         padding: 10px;
         border-bottom: 1px solid #555;
+        
     }
 
     
 }
+
+
+
 .welcome-section {
     text-align: center;
     padding: 50px 20px;
@@ -221,12 +228,12 @@ nav a:hover {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
+    color: #fff;
 }
 
 .portfolio-content h2 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #fff;
 }
 
 .portfolio-content p {
@@ -257,6 +264,7 @@ nav a:hover {
 .project h3 {
     font-size: 1.5em;
     margin-top: 10px;
+    color: #1e1d1d;
 }
 
 .project p {
@@ -303,4 +311,6 @@ nav a:hover {
     text-align: center;
 }
 
+
+/* Additional styling for responsive design */
 
