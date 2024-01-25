@@ -6,10 +6,12 @@ body {
 }
 
 
+
 header {
     background-color: #483d8b;
     color: #fff;
     padding: 10px 0;
+    
 }
 
 nav ul {
@@ -29,6 +31,11 @@ nav a {
     color: #fff;
     font-weight: bold;
 }
+nav a:hover {
+    background: #167aeb;
+    color: black;
+    border-radius: 2px;
+}
 
 .menu-toggle {
     cursor: pointer;
@@ -42,6 +49,9 @@ nav a {
         display: block;
         justify-content: space-between;
         margin-left: 15px;
+        position: fixed;
+        width: 100%;
+        z-index: 1000;
     }
     .nav-list {
         display: none;
