@@ -5,6 +5,7 @@ body {
     
 }
 
+
 header {
     background-color: #483d8b;
     color: #fff;
@@ -29,6 +30,44 @@ nav a {
     font-weight: bold;
 }
 
+.menu-toggle {
+    cursor: pointer;
+    display: none;
+    font-size: 1.5em;
+}
+
+/* Additional styling for responsive design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        justify-content: space-between;
+        margin-left: 15px;
+    }
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #483d8b;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        justify-content: space-between;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+        border-bottom: 1px solid #555;
+    }
+
+    
+}
 .welcome-section {
     text-align: center;
     padding: 50px 20px;
